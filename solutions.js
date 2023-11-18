@@ -79,7 +79,22 @@ function bankAccountSummary() {
     let sum = 0
     for(let account in bankInfo) {
         sum += bankInfo[account]
-    }
-    return sum
+    } return sum 
+
 }
 console.log(bankAccountSummary(bankInfo))
+
+// We create a new variable that is equal to the total amount logged in our previous function
+// We create a function that utilizes an 'if' statement with the condition of bankTotal < 0 and returns true
+// if we have a negative number for our total and false if our number is greater than 0
+// Console log the function with bankTotal passed as our arguement.
+let bankTotal = bankAccountSummary(bankInfo)
+
+function inTheRed() {
+    if(bankTotal < 0) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(inTheRed(bankTotal))
