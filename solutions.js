@@ -1,4 +1,5 @@
-//************ setAlarm */
+//***************************************** setAlarm */
+
 // Write a function named setAlarm that has two arguments.
 
 // The first argument: employed (the boolean true would be passed in as a parameter whenever you are employed)
@@ -24,7 +25,8 @@ console.log(setAlarm(false, false))
 console.log(setAlarm(false, true))
 console.log(setAlarm(true, false));
 
-//************ Count Odd Numbers */
+//***************************************** Count Odd Numbers */
+
  //Write a function named oddNumberCount which receives one argument that should be a number. 
  //The function should return how many positive odd numbers there are below the number passed into the argument.
 
@@ -43,5 +45,41 @@ function oddNumberCount(num) {
     } return count
  }
  
- 
+
  console.log(oddNumberCount(16))
+
+//***************************************** Disemvoweling Trolls */
+
+// We created a function that accepts str as a parameter
+// Next we declared a variable that takes our parameter(which we will pass in an arguement later) and replaces every instances 'g'
+// of and all cases 'i' of the declared replacement values or conditions described by the bracket notation and passes an empty value
+// We next return the variable to end function exection and console a string as our argument.
+function trollsBeGone(str) {
+    let vowelsRemoved = str.replace(/[aeiouAEIOU]/gi, '')
+    return vowelsRemoved
+}
+console.log(trollsBeGone("This website is for losers LOL"))
+
+//***************************************** Bank Account Summary */
+
+// We created our object with 4 key-value pairs of our banking information
+// We then created our function named bankAccountSummary
+// We create a variable set to 0 for the sum of our bankInfo
+// We utilized a for...in loop to create a variable 'account' and loop through each property name in our obj
+// We then added bankInfo[account] which is the value of each property name we iterated through and added it to sum
+// We return sum to stop execution of the function and console log our function with our obj passed as an arguement.
+const bankInfo = {
+    savings: 9000,
+    checking: 2000,
+    moneyMarket: 8000,
+    creditCard: -1000,
+}
+
+function bankAccountSummary() {
+    let sum = 0
+    for(let account in bankInfo) {
+        sum += bankInfo[account]
+    }
+    return sum
+}
+console.log(bankAccountSummary(bankInfo))
