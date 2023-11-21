@@ -2,6 +2,12 @@
 
 //***************************************** MadLibs - Building an Object */
 
+// We created an obj with 5 key-value pairs which values are an empty string
+// We created a function and assigned variables to each key in our object. We ran a prompt for each individual variable then assigned that
+// input to our value in the object.
+// Once the prompts are all completed we used an alert with interpolation of the answers we received and inserted into our key-value pairs
+// in the object.
+// We invoke the function!
 const words = {
     number: "",
     adjective: "",
