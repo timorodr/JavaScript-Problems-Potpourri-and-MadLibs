@@ -98,3 +98,6 @@ function inTheRed() {
     }
 }
 console.log(inTheRed(bankTotal))
+
+//***************************************** MadLibs */
+
